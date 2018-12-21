@@ -1,3 +1,4 @@
-<p>
-  albums works!
-</p>
+<button class="btn btn-primary" type="button" (click)="backClicked()">
+  Back
+</button>
+<app-album *ngFor="let album of albums" [album]="album"></app-album>

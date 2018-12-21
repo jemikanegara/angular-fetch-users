@@ -1,3 +1,7 @@
-<p>
-  album works!
-</p>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Album Title : {{ album.title }}</h5>
+    <p class="card-text">Album ID : {{ album.id }}</p>
+  </div>
+  <a class="btn btn-primary" (click)="showPhotos(album.id)">See Photos</a>
+</div>

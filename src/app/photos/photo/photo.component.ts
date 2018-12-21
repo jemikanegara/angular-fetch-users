@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-photo',
-  templateUrl: './photo.component.html',
-  styleUrls: ['./photo.component.css']
+  selector: "app-photo",
+  templateUrl: "./photo.component.html",
+  styleUrls: ["./photo.component.css"]
 })
 export class PhotoComponent implements OnInit {
+  @Input() singlePhoto: {} = { title: "", url: "" };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,3 +1,9 @@
-<p>
-  user works!
-</p>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.name }}</h5>
+    <p class="card-text">
+      {{ user.username }} | {{ user.email }} | {{ user.phone }}
+    </p>
+    <a class="btn btn-primary" (click)="showAlbums(user.id)">See Albums</a>
+  </div>
+</div>
