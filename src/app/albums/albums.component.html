@@ -1,4 +1,7 @@
+<h1>Albums</h1>
 <button class="btn btn-primary" type="button" (click)="backClicked()">
   Back
 </button>
-<app-album *ngFor="let album of albums" [album]="album"></app-album>
+<div class="flex">
+  <app-album *ngFor="let album of albums" [album]="album"></app-album>
+</div>

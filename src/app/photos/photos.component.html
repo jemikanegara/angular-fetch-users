@@ -1,4 +1,6 @@
 <button class="btn btn-primary" type="button" (click)="backClicked()">
   Back
 </button>
-<app-photo *ngFor="let photo of photos" [singlePhoto]="photo"></app-photo>
+<div class="flex">
+  <app-photo *ngFor="let photo of photos" [singlePhoto]="photo"></app-photo>
+</div>
